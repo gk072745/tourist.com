@@ -8,14 +8,14 @@
 
  TripAdvisor lists over 7 million locations — restaurants, hotels, and tourist attractions. As the biggest travel advisor online, TripAdvisor has 490 million monthly active users. 
 
-# --> #Tech stack :
+# --> Tech stack :
 
   <!--  HTML  -->
   <!--  CSS  -->
   <!--  JavaScript  -->
   <!--  Swiper.JS  --> 
 
- # --> #Team Members:
+ # --> Team Members:
      ++ Govind Kumawat (Team leader)
      ++ Mridul Jha 
      ++ Pankaj Mehra
