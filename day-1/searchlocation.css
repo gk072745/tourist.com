@@ -1,0 +1,43 @@
+#search_location_container
+{
+    width:70%;
+    margin: auto;
+}
+#search_location_container #search_location_image
+{
+    width: 100%;
+    height: 400px;
+}
+#search_location_search_bar_container
+{
+    width: 807px;
+    height: 60px;
+    background-color: #ffffff;
+    position: relative;
+    left: 13%;
+    bottom: 240px;
+    padding: 12px 40px 4px 10px;
+    border-radius: 40px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+}
+#search_location_search_bar
+{
+    font-size: 18px;
+    width: 720px;
+    height: 48px;
+    font-family: inherit;
+    border: none;
+    outline-color: #ffffff;
+}
+
+#search_location_search_bar_container svg
+{
+    width: 100%;
+}
+#search_location_search_bar_container #div_svg_child
+{
+    width: 4%;
+    height: auto;
+    margin: auto;
+}
