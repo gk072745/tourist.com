@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+</style>
+<body>
+     <div id="logoxlm">
+    
+     </div>
+
+     <div id="photoxlm">
+        <div id="photoxlm1">
+              <h3>Itineraries for this ship</h3>
+              <div>
+                <i class="ri-time-line"></i>
+                <div>
+                    <p>Itinerary</p>
+                    <p>Unavailable</p>
+                </div>
+                <h3>
+                    Itineraries for this ship are not available at this time.
+                </h3>
+              </div>
+        </div>
+        <div id="photoxlm2">
+            <div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                         <div class="swiper-slide">
+                              <img src="https://media-cdn.tripadvisor.com/media/photo-w/16/44/73/5d/guppies-playroom.jpg" alt="">
+                         </div>
+
+                         <div class="swiper-slide">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/16/44/73/5c/texas-smokehouse-q.jpg" alt="">
+                       </div>
+ 
+                       <div class="swiper-slide">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/16/44/73/4a/waves-bar.jpg" alt="">
+                   </div>
+
+                   <div class="swiper-slide">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/16/44/73/46/cagney-s-steakhouse.jpg" alt="">
+               </div>
+
+                         
+                          
+                         
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+                <div> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/49/eb/48/norwegian-bliss.jpg?w=200&h=200&s=1" alt=""></div>
+                <div> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/3b/4b/2f/norwegian-bliss-pool.jpg?w=300&h=200&s=1" alt=""></div>
+                <div> <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f4/de/9b/los-lobos-mexican-restaurant.jpg?w=200&h=200&s=1" alt=""></div>
+            </div>
+        </div>
+    </div>  
+
+   <div id="overviewxlm">
+    <h1>Overview</h1>
+    <p>About</p>
+    <p>Passengers:4,004 | Crew: 1,716</p>
+    <p>Passengers to crew: 2.33:1</p>
+    <p>Passengers to space:38.8:1</p>
+    <p>Launched:2018</p>
+   </div>  
+   <div id="cabins">
+      <div>
+        <h1>Cabins</h1>
+          <div>
+            <button onclick="suiteFunc()" >Suite</button>
+            <button onclick="balconyFunc()">balcony</button>
+            <button onclick="outsideFunc()">balcony</button>
+            <button onclick="insideFunc()">Inside</button>
+          </div>
+          <div id="cabinsimages">
+
+          </div>
+          <div id="cabinsData"></div>
+          
+          <div>
+            
+          </div>
+      </div>
+   </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>
+<script type="module">
+   const data={
+    
+    name:"Norwegian Bliss",
+    logo:"https://static.tacdn.com/img2/cruises/cruiseline/logos/100x100/24.jpg",
+    Cabins:{
+        suite:{
+            image:"https://media-cdn.tripadvisor.com/media/photo-s/16/44/84/ab/haven-courtyard-penthouse.jpg",
+            CabinSize: "207 - 971 sq. ft.",
+            Connectedrooms:" 103",
+            Accessiblerooms: 7,
+            Maximumpassengers: 6,
+            Numberofcabins: 388,
+        },
+
+        balcony:{
+            imgae:"https://media-cdn.tripadvisor.com/media/photo-s/16/44/85/88/balcony-cabin.jpg",
+            Cabinsize: '175 - 495 sq. ft.',
+            Connectedrooms:' 223',
+            Accessiblerooms:' 16',
+            Maximumpassengers:' 6',
+            Numberofcabins: '1088',
+        },
+
+        outside:{
+            image:"https://media-cdn.tripadvisor.com/media/photo-s/16/44/7f/aa/family-ocean-view-cabin.jpg",
+            Cabinsize: "160 - 372 sq. ft.",
+            Connected : '24',
+            Accessiblerooms: "8",
+            Maximumpassengers: '5',
+            Numberofcabins: '111',
+        },
+         inside:{
+             image:"https://media-cdn.tripadvisor.com/media/photo-s/16/44/84/1b/inside-cabin.jpg",
+            Cabinsize: "99 - 201 sq. ft.",
+            Connectedrooms: "74",
+            Accessiblerooms: "11",
+            Maximumpassengers: "4",
+            Numberofcabins: "456",
+        },
+    },
+
+  
+}
+   let logoxlm=document.getElementById("logoxlm")
+   
+     let imglogo=document.createElement("img")
+       imglogo.src=data.logo
+     let h1logo=document.createElement("h1")
+       h1logo.innerText=data.name
+
+      let ratingDiv=document.createElement("div") 
+      import rating from "./reviewC.js"
+      ratingDiv.innerHTML=rating()  
+
+
+      let {Cabins:{suite:{image:sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins}}}=data
+      function cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,place){
+
+        let cabinsimages=document.getElementById("cabinsimages")
+       cabinsimages.innerHTML=null
+      let img=document.createElement("img")
+           img.src=sImg;
+      cabinsimages.append(img)
+    let cabinsData=document.getElementById("cabinsData")
+          cabinsData.innerHTML=null
+        let head=document.createElement("p")
+        head.innerText=place
+        let data1=document.createElement("p")
+        let data2=document.createElement("p")
+        let data3=document.createElement("p")
+        let data4=document.createElement("p")
+        let data5=document.createElement("p")
+
+        data1.innerText=`Cabin size: ${CabinSize}`
+        data2.innerText=`Connected rooms: ${Connectedrooms}`
+        data3.innerText=`Accessible rooms: ${Accessiblerooms}`
+        data4.innerText=`Maximum passengers: ${Maximumpassengers}`
+        data5.innerText=`Number of cabins: ${Numberofcabins}`  
+        cabinsData.append(head,data1,data2,data3,data4,data5)    
+
+}
+
+
+cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,"Suite")
+      logoxlm.append(imglogo,h1logo,ratingDiv)
+
+  let suiteFunc=()=>{
+    let {Cabins:{suite:{image:sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins}}}=data
+
+cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,"Suite")
+
+      }
+
+      let balconyFunc=()=>{
+        let {Cabins:{balcony:{image:sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins}}}=data
+
+cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,"Balcony")
+
+      }
+
+let outsideFunc=()=>{
+        let {Cabins:{outside:{image:sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins}}}=data
+
+cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,"Outside")
+
+      }
+
+      let insideFunc=()=>{
+        let {Cabins:{inside:{image:sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins}}}=data
+
+cabinFunc(sImg,CabinSize,Connectedrooms,Accessiblerooms,Maximumpassengers,Numberofcabins,"Inside")
+
+      }
+
+         
+
+    
+  
+      
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  
