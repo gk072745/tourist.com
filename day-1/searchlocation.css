@@ -167,7 +167,6 @@
 #search_location_search_bar_mega_container_child_one
 {
     width: 100%;
-    margin-top: 1%;
     background-color: #ffffff;
     padding-right: 14px;
     align-items: center;
@@ -184,4 +183,16 @@
 }
 #search_location_search_bar_mega_container_child_one_svg svg{
     width:80%;
+}
+
+#search_location_container_recent
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#search_location_container_recent>div{
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
 }
