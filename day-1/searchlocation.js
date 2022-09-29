@@ -85,6 +85,12 @@ let recent_data_append=(recent_data)=>
         p1.innerText=el.country;
         div.append(h5,p1)
         recent_data_container.append(div)
-    })
+    });
+    window.location.reload="/explore.html"
 }
 recent_data_append(recent_data)
+
+let reloaded=()=>
+{
+    location.reload()
+}
