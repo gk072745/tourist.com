@@ -1,0 +1,19 @@
+#searched_image
+{
+    width: 100%;
+}
+#city_information_container
+{
+    width: 40%;
+    height: 50%;
+    margin: auto;
+}
+#city_about
+{
+    margin-left: 5%;
+}
+#about_info
+{
+    width: 35%;
+    font-size: 20px;
+}
