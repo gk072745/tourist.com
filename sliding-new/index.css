@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #explore_properties {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .brand_slide {
+    border: 1px solid #dcdcdc;
+    padding: 30px 0;
+  }
+  .swiper-slide img {
+    width: 100px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 20px;
+    top: 50%;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    color: #000;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* background-color: #fff; */
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 35px;
+    z-index: 100;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  }
+
+  .swiper-button-next:hover{
+    background-color:white;
+  }
+  .swiper-button-prev:hover{
+    background-color: #fff;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+  }
+  .explore_slide_1 > div,
+  .explore_slide_2 > div,
+  .explore_slide_3>div,
+  .ineternational_popular_flights {
+    line-height: 10px;
+  }
+  .explore_slide_1 > div > img,
+  .explore_slide_2 > div > img,
+  .explore_slide_3 > div > img
+  {
+    width: 100%;
+  }
+  .explore_slide_1 > div > h3,
+  .explore_slide_1 > div > p,
+  .explore_slide_2 > div > h3,
+  .explore_slide_2 > div > p {
+    text-align: start;
+  }
+
+  .explore_slide_3 > div > h1{
+font-size:25px;
+text-align:center;
+color: #fff;
+margin-top: -100px;
+line-height: 25px;
+  }
+
+  .explore_slide_1 > div > h3,
+  .explore_slide_2 > div > h3 {
+    font-size: 16px;
+  }
+  .explore_slide_1 > div > p,
+  .explore_slide_2 > div > p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  #explore_by_properties,
+  #ineternational_popular_flights,
+  #trending_popular_flights,
+  #domestic_popular_flights {
+    width: 90%;
+    margin: 30px auto;
+    position: relative;
+  }
+  
+
+
+  
+
+#cube01{
+  margin: auto;
+  width: 90%;
+  height: 250px;
+  /* border: 1px solid red; */
+  background-color: slategray;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+ 
+}
+#cube01>div:nth-child(1){
+  width: 55%;
+  height:100%;
+
+  margin-left: 20px;
+  font-size: 20px;
+}
+#cube01>div:nth-child(2){
+  width: 45%;
+  height:100%;
+ 
+}
+
+
+#cube011>button{
+  cursor: pointer;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 15px;
+  width: 150px;
+}
+#cube01>div>img{
+  width: 100%;
+  height:100%;
+}
+
+
+
+
+
+#cube21{
+  margin:auto;
+  width:90%;
+  height:500px;
+  /* border:1px solid red; */
+  margin-top:20px;
+ 
+}
+
+#cube21>div{
+  width:100%;
+  height:85%;
+  background-color: azure;
+  display:flex;
+  justify-content: space-between;
+  
+}
+#cube21>div>div{
+  width:33%;
+  height:90%;  
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#cube21>div>div>img{
+  width:100%;
+  height:70%;
+} 
+
