@@ -1,0 +1,51 @@
+.view{
+    width:40% ;
+    height:40% ;
+    margin-left:30% ;
+
+}
+
+h1{
+text-align:center ;
+font-size:65px ;
+}
+.view  h2{
+    font-size:65px ;
+    text-align:center ;
+    margin-top:-45px ;
+}
+#A{
+    text-align:center ;
+}
+#A input{
+    
+    border-radius:100px ;
+    width:70% ;
+    height:60px ;
+    
+}
+
+
+#see{
+   margin-left:300px ;
+}
+#see h2{
+    font-size:40px ;
+}
+#see p{
+    font-size:25px ;
+    margin-top:-30px ;
+}
+#B{
+    width: 80%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:250px ;
+    
+}
+#B >div{
+  border: 1px solid red;
+}
+#B>div>p{
+    width: 80%;
+}
