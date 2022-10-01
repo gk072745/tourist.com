@@ -14,6 +14,7 @@
   <--  CSS  -->
   <--  JavaScript  -->
   <--  Swiper.JS  --> 
+  <--  Json server -->
 
      ++ Govind Kumawat (Team leader)
      ++ Mridul Jha 
