@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips</title>
+</head>
+<link rel="stylesheet" href="../css/footer2.css">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+<style>
+    body{
+        font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
+    }
+    #travelling {
+       width: 45%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: 5fr 2fr;
+       padding: 20px 50px;
+       margin-top: 50px;
+       
+    }
+
+    #travel {
+        width: 70%;
+    }
+
+    #travel p {
+        color: rgba(73, 73, 73, 0.897);
+     margin: 15px 0px;
+     font-size: 14px;
+    }
+
+
+
+    #trip {
+        width: 40%;
+    }
+  
+
+    #button {
+margin-top: 50px; 
+   }
+
+   #button button{
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+   }
+   
+   #button button:hover{
+        cursor: pointer;
+        background-color: rgb(46, 46, 46);
+}
+</style>
+<style>
+    #head{
+          height: 80px;
+          width: 80%;
+          margin: auto;
+          display: flex;
+      }
+      #B1{
+          height: 45px;
+          width: 250px;
+          margin-top: 20px;
+
+      }
+      #B1>img{
+          height: 100%;
+          width: 100%;
+      }
+      #B2{
+          height: 43px;
+          width: 500px;
+          margin-top: 30px;
+          margin-left: 40%;
+          display: flex;
+      }
+      #B2>a{
+          font-size: 21px;
+          font-weight: bold;
+          margin-left: 30px;
+          text-decoration: none;
+          color: black;
+      }
+      #signup{
+          height: 40px;
+          width: 120px;
+          margin-left: 10px;
+          background-color: black;
+          border-radius: 25px;
+          margin-top: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #signup>a{
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+      }
+    
+</style>
+<body>
+
+    <div id="head">
+        <div id="B1">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
+        </div>
+        <div id="B2">
+            <a href="./reviews.html"><i class="ri-quill-pen-line"></i>Review</a>
+            <a href="./trips.html"><i class="ri-hearts-fill"></i>Trips</a>
+            <a href="./alert.html"><i class="ri-notification-3-fill"></i>Alerts</a>
+        </div>
+        <div id="signup"><a href="./login.html">Sign in</a></div>
+    </div>
+
+    <div id="travelling">
+        <div id="travel">
+           <h2>Create your first Trip</h2>
+            <p>Save traveler-recommended places for your trip</p>
+
+            <p> View the things to do, restaurants and hotels you saved on a map</p>
+            <p> Easily access all your saves while traveling, wherever you go</p>
+
+            <div id="button">
+                <button>
+                    Get started
+                </button>
+            </div>
+
+
+        </div>
+
+
+        <div id="trip">
+
+
+            <img src="https://static.tacdn.com/img2/trips/trips-logged-out-page-image-v4-small.png" >
+
+        </div>
+
+    </div>
+
+    <div id="footer1">
+        <div id="footer1_2">
+    
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="module">
+    import {footer2} from "../Components/footerC.js"
+    document.getElementById("footer1_2").innerHTML=footer2()
+  </script>

@@ -1,0 +1,143 @@
+body{
+    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+}
+
+.locate{
+    line-height: 30px;
+}
+#top{
+text-align: center;
+width: 50%;
+font-size:28px ;
+margin: auto;
+
+}
+
+#A{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    padding: 0px 20px;
+    align-items: center;
+    border: 2px solid rgb(184, 184, 184);
+ border-radius: 40px;
+}
+#A i{
+    margin: auto 20px auto 0px;
+    font-size: 20px;
+}
+#A input{
+    height:40px ;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    width: 80%;
+    
+}
+
+.fadsf{
+    width: 70%;
+    margin: auto;
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+}
+
+.fadsf h1{
+    margin: 0px;
+  font-size: 30px;
+}
+
+.fadsf p{
+    color: rgb(78, 78, 78);
+}
+
+#mdustw img{
+    height: 230px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#mdustw>div{
+
+    width: 70%;
+    margin: auto;
+    display: grid;
+    border-radius: 10px;
+    gap:0px 20px;
+    border: 1px solid rgb(190, 190, 190);
+grid-template-columns: 1fr 2fr 2fr;
+margin-top: 50px;
+}
+
+#mdustw>div>:nth-child(2){
+padding: 10px;
+}
+
+#mdustw>div>:nth-child(2)>button{
+ background-color: black;
+ border-radius: 4px;
+ padding: 2px 5px;
+ font-weight: bold;
+ color: rgb(243, 243, 243);
+}
+
+#mdustw>div>:nth-child(2)>h3{
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.801);
+}
+#mdustw>div>div:last-child{
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    padding: 40px;
+}
+
+#mdustw>div>div:last-child>button{
+    border: 3px solid rgb(0, 0, 0);
+    background: transparent;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 13px;
+}
+
+
+.star{
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(242,178,3)
+}
+.star_rating{
+    cursor: pointer;
+}
+#resto img{
+    height: 230px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#resto{
+    margin-top: 50px;
+}
+#resto>div{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    border-radius: 10px;
+    gap:0px 20px;
+    border: 1px solid rgb(190, 190, 190);
+grid-template-columns: 1fr 2fr;
+margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

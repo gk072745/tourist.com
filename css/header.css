@@ -1,0 +1,93 @@
+#head{
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    border: 1px solid rgb(204, 200, 200);
+}
+#B1{
+    height: 45px;
+    width: 180px;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+#B1>img{
+    height: 100%;
+    width: 100%;
+}
+#head>input{
+    height: 35px;
+    width: 350px;
+    border-radius: 25px;
+    border: 1px solid rgb(204, 200, 200);
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#B2{
+    height: 43px;
+    width: 280px;
+    margin-top: 15px;
+    margin-left: 15%;
+    display: flex;
+}
+#B2>a{
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 35px;
+    text-decoration: none;
+    color: #069;
+}
+#B2>a:hover{
+    color: rgb(56, 54, 54);
+}
+#signup{
+    height: 40px;
+    width: 85px;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 25px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#signup>a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#signup:hover{
+    background-color: rgb(61, 56, 56);
+}
+#head2{
+    height: 40px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    border: 1px solid rgb(204, 200, 200);
+    padding-left: 45px;
+}
+#head2>a{
+    text-decoration: none;
+    color: rgb(70, 68, 68);
+    margin-left: 25px;
+    font-size: 18px;
+    margin-top: 8px;
+}
+#head2 a:hover{
+    color: rgb(139, 133, 133);
+}
+
+        #head3{
+            height: 30px;
+            width: 100%;
+            background-color: white;
+        }
+        #head3>h1{
+            font-size: 12px;
+            margin-top: 17px;
+            margin-left: 82%;
+            color: #858585;
+        }
+     

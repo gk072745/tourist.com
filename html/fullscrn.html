@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+   
+  </head>
+<style>
+   
+*{
+    margin: 0px;
+    padding: 0px;
+}
+   .imgBox{
+
+      width: 100%;
+      margin: auto;
+      display: flex;
+      background-color: rgba(99, 99, 99, 0.486);
+      justify-content: center;
+   }
+   img{
+    width: 80%;
+   }
+   #close{
+    display: flex;
+    justify-content: flex-end;
+   }
+   #close h1{
+    color: cadetblue;
+    margin-right: 20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+   }
+   h1:hover{
+    background-color: antiquewhite;
+   }
+</style>
+  <body>
+
+    <div id="close">
+     <h1>&larr;</h1>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="container">
+       
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+  </body>
+</html>
+
+<script>
+
+    let getData=async()=>{
+          let res=await fetch(`https://sheltered-oasis-51645.herokuapp.com/api/fullImg`)
+          res=await res.json()
+          renderDom(res)
+    }
+
+getData()
+    let renderDom=(data)=>{
+    let container=document.getElementById("container")
+        container.innerHTML=""
+        console.log(data)
+        data.forEach((ele) => {
+            let div1=document.createElement("div")
+             div1.setAttribute("class","swiper-slide")
+             div2=document.createElement("div")
+ div2.setAttribute("class","imgBox")
+             let img=document.createElement("img")
+             img.src=ele
+             img.onclick=()=>{
+             window.location.href="./review.html"
+             }
+             div2.append(img)
+             div1.append(div2)
+             container.append(div1)
+        });
+    }
+
+    document.querySelector("h1").addEventListener("click",()=>{
+        window.location.href="./review.html"
+    })
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>

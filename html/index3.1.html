@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            height: 60px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            border: 1px solid rgb(204, 200, 200);
+        }
+        #B1{
+            height: 45px;
+            width: 180px;
+            margin-top: 5px;
+            margin-left: 100px;
+        }
+        #B1>img{
+            height: 100%;
+            width: 100%;
+        }
+        #head>input{
+            height: 35px;
+            width: 350px;
+            border-radius: 25px;
+            border: 1px solid rgb(204, 200, 200);
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        #B2{
+            height: 43px;
+            width: 280px;
+            margin-top: 15px;
+            margin-left: 15%;
+            display: flex;
+        }
+        #B2>a{
+            font-size: 21px;
+            font-weight: bold;
+            margin-left: 35px;
+            text-decoration: none;
+            color: #069;
+        }
+        #B2>a:hover{
+            color: rgb(56, 54, 54);
+        }
+        #signup{
+            height: 40px;
+            width: 85px;
+            margin-left: 10px;
+            background-color: black;
+            border-radius: 25px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #signup>a{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        #signup:hover{
+            background-color: rgb(61, 56, 56);
+        }
+        #head2{
+            height: 40px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            border: 1px solid rgb(204, 200, 200);
+            padding-left: 45px;
+        }
+        #head2>a{
+            text-decoration: none;
+            color: rgb(70, 68, 68);
+            margin-left: 25px;
+            font-size: 18px;
+            margin-top: 8px;
+        }
+        #head2 a:hover{
+            color: rgb(139, 133, 133);
+        }
+        #head3{
+            height: 30px;
+            width: 100%;
+            background-color: white;
+        }
+        #head3>h1{
+            font-size: 12px;
+            margin-top: 17px;
+            margin-left: 82%;
+            color: #858585;
+        }
+        #head4{
+            height: auto;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        #heads1{
+            height: auto;
+            width: 75%;
+            margin: auto;
+            background-color: white;
+        }
+        #box1{
+            height: 170px;
+            width: 83%;
+            margin: auto;
+            display: flex;
+        }
+        #image{
+            height: 100%;
+            width: 17%;
+        }
+        #image>img{
+            height: 100%;
+            width: 100%;
+        }
+        #w1{
+            height: 100%;
+            width: 83%;
+        }
+        #w1>h1{
+            font-size: 35px;
+            font-weight: lighter;
+            margin-left: 5%;
+        }
+        #w1>h2{
+            margin-top: -10px;
+            font-size: 20px;
+            font-weight: lighter;
+            margin-left: 5%;
+        }
+        #smallbox{
+            display: flex;
+            height: 20px;
+            width: 40%;
+            margin-left: 2%;
+        }
+        #smallbox>h1{
+            margin-left: 20px;
+            font-size: 13px;
+            margin-top: 0px;
+        }
+        #smallbox>h1>a{
+            font-size: 13px;
+            text-decoration: none;
+            color: black;
+            margin-top: 0px;
+        }
+        #box2{
+            height: 380px;
+            width: 83%;
+            margin: auto;
+            display: flex;
+            margin-top: 100px;
+        }
+        #image1{
+            height: 90%;
+            width: 57%;
+        }
+        #image1>img{
+            height: 100%;
+            width: 100%;
+        }
+        #w2{
+            height: 100%;
+            width: 43%;
+        }
+        #w2>h1{
+            font-size: 30px;
+            font-weight: lighter;
+            margin-top: -5px;
+            margin-left: 22px;
+        }
+        #w2>h1:hover{
+            text-decoration: underline;
+        }
+        #w2>p{
+            font-size: 15px;
+            margin-top: -20px;
+            margin-left: 22px;
+        }
+        #w2>p:hover{
+            text-decoration: underline;
+        }
+        #w2>h2{
+            font-size: 17px;
+            font-weight: lighter;
+            font-style: italic;
+            margin-top: 20px;
+            margin-left: 22px;
+        }
+        #w2>h3{
+            margin-left: 22px;
+            font-weight: lighter;
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+        #w2>h4{
+            margin-left: 22px;
+            font-weight: lighter;
+            font-size: 15px;
+            margin-top: -15px;
+            color: rgb(0, 110, 253);
+        }
+        #w2>h4:hover{
+            text-decoration: underline;
+        }
+        #w2>h5{
+            margin-left: 22px;
+            font-weight: lighter;
+            font-size: 13px;
+            margin-top: -5px;
+            color: rgb(87, 7, 161);
+        }
+        #w2>h5:hover{
+            text-decoration: underline;
+        }
+        #box3{
+            height: 40px;
+            width: 83%;
+            margin-left: 82px;
+            margin-top: 80px;
+        }
+        #box3>h1{
+            font-size: 28px;
+            font-weight: lighter;
+            margin-top: -5px;
+        }
+        #box4{
+            height: 160px;
+            width: 83%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #image2{
+            height: 100%;
+            width: 31%;
+        }
+        #image2>img{
+            height: 100%;
+            width: 100%;
+        }
+        #w3{
+            height: 30px;
+            width: 100%;
+            margin-top: -100px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        #image3{
+            height: 100%;
+            width: 31%;
+        }
+        #image3>img{
+            height: 100%;
+            width: 100%;
+        }
+        #w4{
+            height: 30px;
+            width: 100%;
+            margin-top: -100px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        #image4{
+            height: 100%;
+            width: 31%;
+        }
+        #image4>img{
+            height: 100%;
+            width: 100%;
+        }
+        #w5{
+            height: 30px;
+            width: 100%;
+            margin-top: -100px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        #box5{
+            height: 110px;
+            width: 83%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        #box5>h1{
+            font-size: 16.5px;
+            font-weight: lighter;
+            font-style: italic;
+            margin-top: 20px;
+        }
+        #footer{
+            height: 160px;
+            width: 100%;
+            background-color: #faf1ed;
+        }
+        #f1{
+            height: 70%;
+            width: 85%;
+            margin: auto;
+            margin-top: 25px;
+        }
+        #f1_1{
+            height: 70%;
+            width: 100%;
+            display: flex;
+        }
+        #image5{
+            height: 60%;
+            width: 4%;
+        }
+        #image5>img{
+            height: 100%;
+            width: 100%;
+        }
+        #write1{
+            height: 100%;
+            width: 60%;
+            margin-left: 20px;
+        }
+        #write1>p{
+            font-size: 12px;
+            margin-top: 0px;
+        }
+        #writes1{
+            height: 30%;
+            width: 85%;
+            margin-top: -8px;
+            display: flex;
+        }
+        #writes2{
+            height: 30%;
+            width: 85%;
+            margin-top: 0px;
+            display: flex;
+        }
+        #writes1>h1{
+            margin-right: 20px;
+            margin-top: 0px;
+            font-size: 17px;
+            text-decoration: underline;
+            font-weight: light;
+        }
+        #writes1>h1:hover{
+            color: rgb(71, 70, 70);
+        }
+        #writes2>h1{
+            margin-right: 20px;
+            margin-top: 0px;
+            font-size: 17px;
+            text-decoration: underline;
+            font-weight: light;
+        }
+        #writes2>h1:hover{
+            color: rgb(71, 70, 70);
+        }
+        #inr{
+            height: 30px;
+            width: 30%;
+            margin-left: 20px;
+            margin-top: 15px;
+            display: flex;
+        }
+        #inr1{
+            height: 100%;
+            width: 48%;
+            border-radius: 10px;
+        }
+        #inr1>option{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #inr2{
+            height: 100%;
+            width: 48%;
+            margin-left: 2%;
+            border-radius: 10px;
+        }
+        #inr2>option{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #f1_2{
+            height: 30%;
+            width: 65%;
+        }
+        #f1_2>p{
+            font-size: 13px;
+            margin-top: 0px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="B1">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
+        </div>
+        <input type="text">
+        <div id="B2">
+            <a href="./reviews.html">Review</a>
+            <a href="./trips.html">Trips</a>
+            <a href="./alert.html">Alerts</a>
+        </div>
+        <div id="signup"><a href="./login.html">Sign in</a></div>
+    </div>
+    <div id="head2">
+        <a href="">India</a>
+        <a href="./hotels0.html">Hotels</a>
+        <a href="">Things to do</a>
+        <a href="">Restaurants</a>
+        <a href="">Flights</a>
+        <a href="">Holiday homes</a>
+        <a href="">Package Holidays</a>
+        <a href="cruise.html">Cruises</a>
+        <a href="">...</a>
+    </div>
+    <div id="head3"><h1>Tripadvisor Travellers' Choice Awards</h1></div>
+    <div id="head4">
+        <div id="heads1">
+            <div id="box1">
+                <div id="image">
+                    <img src="https://static.tacdn.com/img2/travelers_choice/2022/botb_v2/TC_LL.svg" alt="">
+                </div>
+                <div id="w1">
+                    <h1>Top Sailing & Day Cruises — United States</h1>
+                    <h2>Get out on the open water with traveller-loved expeditions.</h2>
+                    <div id="smallbox">
+                        <h1><a href="index3.html">World</a></h1>
+                        <h1><a href="index3.1.html">United States</a></h1>
+                        <h1>Regions</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/23/10/f1/a3/little-toot-dolphin-adventure.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>1. Little Toot Dolphin Adventure at Clearwater Beach</h1>
+                    <p>Clearwater, Florida</p>
+                    <h2>“Great value for dolphin viewing trip！”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>95 Hotels</h4>
+                    <h4>10 B&B and Inns</h4>
+                    <h4>1,716 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/80/93/a4/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>2. Morning Mimosa or Afternoon Narrated Sightseeing Cruise from Newport, RI</h1>
+                    <p>Newport, Rhode Island</p>
+                    <h2>“Morning Mimosa cruise was Magnificent!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>25 Hotels</h4>
+                    <h4>93 B&B and Inns</h4>
+                    <h4>466 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/d2/d2/db/great-boat.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>3. Private 2.5-3 Hour Sailboat Harbor Cruise</h1>
+                    <p>Charleston, South Carolina</p>
+                    <h2>“Lovely Private Sail Boat Outing”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>80 Hotels</h4>
+                    <h4>39 B&B and Inns</h4>
+                    <h4>1,130 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/5b/46/4a/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>4. Manhattan Adventure Boat Ride</h1>
+                    <p>New York City, New York</p>
+                    <h2>“A brilliant and fun way to see amazing NYC from the river.”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>515 Hotels</h4>
+                    <h4>91 B&B and Inns</h4>
+                    <h4>1,010 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/9a/8c/a9/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>5. Schooner Clearwater- Afternoon Sailing Cruise-Clearwater Beach</h1>
+                    <p>Clearwater, Florida</p>
+                    <h2>“A definite must do experience....amazing! ”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>95 Hotels</h4>
+                    <h4>10 B&B and Inns</h4>
+                    <h4>1,716 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/c4/2e/5c/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>6. Fort Lauderdale Sailing Charter</h1>
+                    <p>Fort Lauderdale, Florida</p>
+                    <h2>“Sailboat Tour with Captain Dan”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>138 Hotels</h4>
+                    <h4>30 B&B and Inns</h4>
+                    <h4>2,198 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/21/a7/5e/40/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>7. Chicago Architecture River Cruise</h1>
+                    <p>Chicago, Illinois</p>
+                    <h2>“Chicago river tour: the best outlooks and insights”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>217 Hotels</h4>
+                    <h4>30 B&B and Inns</h4>
+                    <h4>186 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/28/79/1a/jekyll-island-dolphin.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>8. Jekyll Island Dolphin Tours</h1>
+                    <p>Jekyll Island, Georgia</p>
+                    <h2>“Last Hooray before College Drop Off”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>11 Hotels</h4>
+                    <h4>1 B&B and Inns</h4>
+                    <h4>11 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1c/ba/9b/fa/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>9. Sunset Sail Aboard A Classic Yacht</h1>
+                    <p>San Diego, California</p>
+                    <h2>“Amazing relaxing boat ride on a beautiful yacht”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>283 Hotels</h4>
+                    <h4>31 B&B and Inns</h4>
+                    <h4>4,331 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/66/66/b0/charleston-marsh-eco.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>10. Charleston Marsh Eco Boat Cruise with stop at Morris Island Lighthouse</h1>
+                    <p>Charleston, South Carolina</p>
+                    <h2>“Lots of Dolphins & 2 Sand Dollars”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>80 Hotels</h4>
+                    <h4>39 B&B and Inns</h4>
+                    <h4> 1,130 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/ec/4f/24/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>11. Privateer Schooner Sailing Tour in Salem Sound</h1>
+                    <p>Salem, Massachusetts</p>
+                    <h2>“Was a great 2 hrs away from the Salem hype!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>4 Hotels</h4>
+                    <h4>9 B&B and Inns</h4>
+                    <h4>34 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/5d/ed/10/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>12. Marco Island Dolphin And Cape Romano Sightseeing Tour</h1>
+                    <p>Marco Island, Florida</p>
+                    <h2>“Absolutely amazing - dolphins guaranteed !”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>12 Hotels</h4>
+                    <h4>1 B&B and Inns</h4>
+                    <h4>2,783 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/69/ad/c5/small-group-san-diego.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>13. Small-Group San Diego Afternoon Sailing Excursion</h1>
+                    <p>San Diego, California</p>
+                    <h2>“Great Day on the Water!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>283 Hotels</h4>
+                    <h4>31 B&B and Inns</h4>
+                    <h4>4,331 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/32/46/37/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>14. Adults only Champagne Celebration Sunset Cruise from Key West</h1>
+                    <p>Key West, Florida</p>
+                    <h2>“Relaxing sail”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>53 Hotels</h4>
+                    <h4>74 B&B and Inns</h4>
+                    <h4>177 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1d/5a/48/67/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>15. Big Fun Dolphin Cruise and Sealife Experience Orange Beach</h1>
+                    <p>Orange Beach, Alabama</p>
+                    <h2>“Great activity for young children”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>19 Hotels</h4>
+                    <h4>1 B&B and Inns</h4>
+                    <h4>5,254 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0a/ee/e3/a5/16-8am-tour.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>16. Dana Point Whale Watching and Dolphin Watching Eco-Safari</h1>
+                    <p>Dana Point, California</p>
+                    <h2>“Very good experience coming back for sure”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>12 Hotels</h4>
+                    <h4>1 B&B and Inns</h4>
+                    <h4>322 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/40/bb/c3/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>17. Sunset Cruise with Live Music and Open Bar from Ka’anapali Beach</h1>
+                    <p>Maui, Hawaii</p>
+                    <h2>“A must do!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>59 Hotels</h4>
+                    <h4>51 B&B and Inns</h4>
+                    <h4>9,846 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/ef/e3/f1/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>18. 1.5 or 2-Hour Boston Harbor Sightseeing Cruise Aboard a Classic Tall Ship</h1>
+                    <p>Boston, Massachusetts</p>
+                    <h2>“Harbor Cruise/Tour Delight”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>97 Hotels</h4>
+                    <h4>37 B&B and Inns</h4>
+                    <h4>551 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/67/5a/aa/unique-topography.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>19. LUCKY LADY - Deluxe Na Pali Sunset Tour</h1>
+                    <p>Kauai, Hawaii</p>
+                    <h2>“Na Pali Sunset Cruise - Sept. 2022”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>34 Hotels</h4>
+                    <h4>14 B&B and Inns</h4>
+                    <h4>3,805 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/21/9e/83/02/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>20. Deluxe Sail & Snorkel to the Captain Cook Monument</h1>
+                    <p>Island of Hawaii, Hawaii</p>
+                    <h2>“Great snorkeling experience with a super crew!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>51 Hotels</h4>
+                    <h4>156 B&B and Inns</h4>
+                    <h4>4,460 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/23/5b/3e/f2/san-francisco-from-the.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>21. 1.5-hour San Francisco Bay Sailing Tour</h1>
+                    <p>San Francisco, California</p>
+                    <h2>“Wonderful afternoon on the Bay”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>245 Hotels</h4>
+                    <h4>79 B&B and Inns</h4>
+                    <h4>80 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/95/c8/70/photo0jpg.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>22. 2 Hour Sailing Cruise on Lake Tahoe</h1>
+                    <p>South Lake Tahoe, California</p>
+                    <h2>“Awesome Experience”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>69 Hotels</h4>
+                    <h4>5 B&B and Inns</h4>
+                    <h4>1,323 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+               </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/67/1f/ea/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>23. Windjammer Classic Day Sail</h1>
+                    <p>Camden, Maine</p>
+                    <h2>“It was a great experience. Very interesting and I loved being out on the bay.”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>11 Hotels</h4>
+                    <h4>18 B&B and Inns</h4>
+                    <h4>82 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/22/76/fb/c3/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>24. Seattle Harbor Cruise</h1>
+                    <p>Seattle, Washington</p>
+                    <h2>“Highly recommend for a quick trip!”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>114 Hotels</h4>
+                    <h4>26 B&B and Inns</h4>
+                    <h4>53 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box2">
+                <div id="image1">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/f5/57/c0/caption.jpg" alt="">
+                </div>
+                <div id="w2">
+                    <h1>25. Northwestern Fjord Sightseeing Cruise from Seward</h1>
+                    <p>Seward, Alaska</p>
+                    <h2>“Best is our Kenai Fjord experiences”</h2>
+                    <h3>Shop for a place to stay</h3>
+                    <h4>15 Hotels</h4>
+                    <h4>47 B&B and Inns</h4>
+                    <h4>131 Holiday Rentals</h4>
+                    <h5>MORE</h5>
+                </div>
+            </div>
+            <div id="box3"><h1>More Travellers' Choice award-winning categories</h1></div>
+            <div id="box4">
+                <div id="image2">
+                    <a href="index1.html"><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_TopExperiences.jpg" alt=""></a>
+                    <div id="w3">TOP OVERALL EXPERIENCES</div>
+                </div>
+                <div id="image3">
+                    <a href="index2.html"> <img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_NatureOutdoors.jpg" alt=""></a>
+                    <div id="w4">NATURE AND OUTDOOR ACTIVITIES</div>
+                </div>
+                <div id="image4">
+                    <a href="index3.html"> <img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_Day_Cruises.jpg" alt=""></a>
+                    <div id="w5">SAILING & DAY CRUISES</div>
+                </div>
+            </div>
+            <div id="box4">
+                <div id="image2">
+                    <a href="index4.html"><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_Food_Experiences.jpg" alt=""></a>
+                    <div id="w3">FOOD EXPERIENCES</div>
+                </div>
+                <div id="image3">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_WineBeerSpirits.jpg" alt=""></a>
+                    <div id="w4">WINE, BEER & SPIRITS EXPERIENCES</div>
+                </div>
+                <div id="image4">
+                    <a href=""> <img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_SnorkelingWater.jpg" alt=""></a>
+                    <div id="w5">SNORKELLING & WATER SPORTS</div>
+                </div>
+            </div>
+            <div id="box4">
+                <div id="image2">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_BucketList.jpg" alt=""></a>
+                    <div id="w3">BUCKET LIST EXPERIENCES</div>
+                </div>
+                <div id="image3">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_CultureHistory.jpg" alt=""></a>
+                    <div id="w4">CULTURAL & HISTORICAL TOURS</div>
+                </div>
+                <div id="image4">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_PopCulture.jpg" alt=""></a>
+                    <div id="w5">POP CULTURE TOURS</div>
+                </div>
+            </div>
+            <div id="box4">
+                <div id="image2">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_TopAttractions.jpg" alt=""></a>
+                    <div id="w3">TOP ATTRACTIONS</div>
+                </div>
+                <div id="image3">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/2022/tc_ThingsToDo_category_AmusementWaterParks.jpg" alt=""></a>
+                    <div id="w4">AMUSEMENT PARKS & WATER PARKS</div>
+                </div>
+                <div id="image4"></div>
+        </div>
+        <div id="box3"><h1>Need inspiration? See more Travellers’ Choice Awards.</h1></div>
+            <div id="box4">
+                <div id="image2">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/cross/Cross_Sell_ThingsToDo.jpg" alt=""></a>
+                    <div id="w3">THINGS TO DO</div>
+                </div>
+                <div id="image3">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/cross/Cross_Sell_Popular_Destinations.jpg" alt=""></a>
+                    <div id="w4">DESTINATIONS</div>
+                </div>
+                <div id="image4">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/cross/Cross_Sell_Restaurants.jpg" alt=""></a>
+                    <div id="w5">RESTAURANTS</div>
+                </div>
+            </div>
+            <div id="box4">
+                <div id="image2">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/cross/Cross_Sell_Hotels.jpg" alt=""></a>
+                    <div id="w3">HOTELS</div>
+                </div>
+                <div id="image3">
+                    <a href=""><img src="https://static.tacdn.com/img2/tc/cross/Cross_Sell_Beaches.jpg" alt=""></a>
+                    <div id="w4">BEACHES</div>
+                </div>
+                <div id="image4"></div>
+         </div>
+         <div id="box5">
+            <h1>The Best of the Best Things to Do Awards are calculated based on the quality and quantity of traveller reviews and ratings for experiences, tours, activities, and attractions on Tripadvisor. All Best of the Best Things to Do subcategories are limited to experiences (bookable tours and activities), except the Best Things to Do in 10 cities around the world, where attractions (activities on Tripadvisor that travellers can visit without booking any ticket) are included.</h1>
+         </div>
+    </div>
+    <div id="footer">
+        <div id="f1">
+            <div id="f1_1">
+                <div id="image5">
+                    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg" alt="">
+                </div>
+                <div id="write1">
+                    <p>© 2022 Tripadvisor LLC All rights reserved.</p>
+                    <div id="writes1">
+                        <h1>Terms of Use</h1>
+                        <h1>Privacy and Cookies Statement</h1>
+                        <h1>Cookie consent</h1>
+                        <h1>Site Map</h1>
+                    </div>
+                    <div id="writes2">
+                        <h1>How the site works</h1>
+                        <h1>Contact us</h1>
+                    </div>
+                </div>
+                <div id="inr">
+                    <select name="" id="inr1">
+                    <option value="">&#36; INR</option>
+                    <option value="">&euro; Euro</option>
+                    <option value="">&#162; Cent</option>
+                    <option value="">&#163; Pound</option>
+                    <option value="">&curren; G.C.</option>
+                    <option value="">&yen; Yen</option>
+                    <option value="">&#8355; Franc</option>
+                    <option value="">&#8356; Lira</option>
+                    <option value="">&#8359; Peseta</option>
+                    <option value="">&#x20B9; Rupee</option>
+                    <option value="">&#8361; Won </option>
+                    <option value="">&#8372; Hvyvnia</option>
+                    <option value="">&#8367; Drachma</option>
+                    <option value="">&#8366; Tugrik</option>
+                    <option value="">&#8368; German Penny</option>
+                    <option value="">&#8370; Guarani</option>
+                    <option value="">&#8369; Pesa</option>
+                    <option value="">&#8371; Austral</option>
+                    <option value="">&#8373; Cedi</option>
+                    <option value="">&#8365; Kip</option>
+                    <option value="">&#8362; New Sheqel</option>
+                    <option value="">&#8363; Dong</option>
+                   </select>
+                    <select  name="" id="inr2">
+                     <option value=""> India </option>
+                     <option value=""> Shqipëria </option>
+                     <option value=""> Dzayer </option>
+                     <option value=""> Andorra </option>
+                     <option value=""> Angola </option>
+                     <option value=""> Australia </option>
+                     <option value=""> বাংলাদেশ </option>
+                     <option value=""> Bielaruś </option>
+                     <option value=""> འབྲུག་ཡུལ </option>
+                     <option value=""> بروني </option>
+                     <option value=""> កម្ពុជា </option>
+                     <option value=""> تشاد </option>
+                     <option value=""> 中国 </option>
+                     <option value=""> Colombia </option>
+                     <option value=""> جزر القمر </option>
+                     <option value=""> Česko </option>
+                     <option value=""> جيبوتي Djibouti </option>
+                     <option value="">	Sak'art'velo </option>
+                     <option value=""> Ελλάς </option>
+                     <option value=""> Magyarország </option>
+                     <option value=""> Īrān </option>
+                     <option value=""> Al-Yaman اليمن	</option>
+                     <option value=""> Việt Nam</option>
+                     <option value=""> Città del Vaticano	</option>
+                     <option value=""> O‘zbekiston</option>
+                     <option value=""> USA	</option>
+                     <option value=""> Ukraїna	</option>
+                     <option value=""> Türkiye</option>
+                     <option value=""> تونس</option>
+                     <option value=""> Mueang Thai</option>
+                     <option value=""> Suriyah سورية</option>
+                     <option value=""> Suisse,</option>
+                     <option value=""> As-Sudan السودان</option>
+                     <option value=""> ශ්‍රී ලංකාව</option>
+                     <option value=""> España</option>
+                     <option value=""> Paguot Thudän</option>
+                    </select>
+                </div>
+            </div>
+            <div id="f1_2">
+                <p>This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

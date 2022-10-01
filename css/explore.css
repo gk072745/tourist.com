@@ -1,10 +1,70 @@
+
 #searched_image
 {
     width: 100%;
 }
+
 #city_information_container
 {
     width: 40%;
-    height: 200px;
+    height: 50%;
     margin: auto;
+}
+#city_about
+{
+    margin-left: 5%;
+    padding: 10px;
+    width: 88%;
+    margin: auto;
+    background-color: grey;
+}
+#about_info
+{
+    width: 35%;
+    font-size: 20px;
+}
+
+#trandingForm{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+
+}
+
+#trandingForm>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#trandingForm>div>div{
+    width: 30%;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(243, 236, 226);
+}
+
+#trandingForm>div>div>div{
+    display: flex;
+    align-items: center;
+}
+.trandinginnerdiv{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    width: 65%;
+}
+#trandingForm>div img{
+    width: 40px;
+    height: 40px;
+    margin: 20px 15px;
+    border-radius: 50px;
+}
+
+#trandingForm h3:hover ,#trandingForm h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/alert.css">
+<link rel="stylesheet" href="../css/footer2.css">
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Alert</title>
+    <style>
+        #head{
+              height: 80px;
+              width: 80%;
+              margin: auto;
+              display: flex;
+          }
+          #B1{
+              height: 45px;
+              width: 250px;
+              margin-top: 20px;
+    
+          }
+          #B1>img{
+              height: 100%;
+              width: 100%;
+          }
+          #B2{
+              height: 43px;
+              width: 500px;
+              margin-top: 30px;
+              margin-left: 40%;
+              display: flex;
+          }
+          #B2>a{
+              font-size: 21px;
+              font-weight: bold;
+              margin-left: 30px;
+              text-decoration: none;
+              color: black;
+          }
+          #signup{
+              height: 40px;
+              width: 120px;
+              margin-left: 10px;
+              background-color: black;
+              border-radius: 25px;
+              margin-top: 22px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+          #signup>a{
+              font-size: 20px;
+              font-weight: bold;
+              text-decoration: none;
+              color: white;
+          }
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="B1">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
+        </div>
+        <div id="B2">
+            <a href="./reviews.html"><i class="ri-quill-pen-line"></i>Review</a>
+            <a href="./trips.html"><i class="ri-hearts-fill"></i>Trips</a>
+            <a href="./alert.html"><i class="ri-notification-3-fill"></i>Alerts</a>
+        </div>
+        <div id="signup"><a href="./login.html">Sign in</a></div>
+    </div>
+
+    <div class="container">
+        <div class="center">
+            <!-- <h1>Login</h1> -->
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
+            <h2>Sign in to unlock the best of Tripadvisor.</h2>
+            
+        </div>
+        <div class="box">
+            <img src="https://static.tacdn.com/img2/google/G_color_40x40.png" alt="">
+            <a href="./login.html">Continue with Google</a>
+        </div>
+        <div class="box">
+            <img src="https://static.tacdn.com/img2/facebook/icn-FB2.png" alt="">
+            <a href="./login.html">Continue with Facebook</a>
+        </div>
+        <div class="box">
+            <img src="https://www.bing.com/th?id=OIP._iNrWFBrSUEoJtAZPvoVRwHaFW&w=294&h=212&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt="">
+            <a href="./login.html">Continue with Email</a>
+        </div>
+        <div class="box-2">
+            <p>By proceeding, you agree to our <a href="">Terms</a> of Use and confirm you have read our <a href="">Privacy</a> and <a href="">Cookie</a> Statement.</p>
+            <p> This site is protected by reCAPTCHA and the Google Privacy Policy and <a href="">Terms</a> of Service apply.</p>
+        </div>
+    </div>
+    
+    <div id="footer1">
+        <div id="footer1_2">
+    
+        </div>
+    </div>
+</body>
+</html>
+<script type="module">
+    import {footer2} from "../Components/footerC.js"
+    document.getElementById("footer1_2").innerHTML=footer2()
+  </script>

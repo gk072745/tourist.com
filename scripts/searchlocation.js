@@ -70,7 +70,7 @@ let getdata_cityname_search_box=(el)=>
 {
    recent_data.push(el) 
    localStorage.setItem("recent_data",JSON.stringify(recent_data))
-   window.location.href="./explore.html";
+   window.location.href="../html/explore.html";
 }
 
 let recent_data_container=document.getElementById("search_location_container_recent")
