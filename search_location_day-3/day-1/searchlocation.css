@@ -1,0 +1,198 @@
+#search_location_container
+{
+    width:70%;
+    margin: auto;
+    height: auto;
+}
+#search_location_image_container
+{
+    width: 100%;
+}
+#search_location_container #search_location_image
+{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+}
+#search_location_search_bar_mega_container
+{
+    width: 780px;
+    height: auto;
+    padding: 0px 14px 4px 0px;
+    position: relative;
+    z-index: 0;
+    left: 15%;
+    bottom: 240px;
+}
+@media all and (min-width:1100px) and (max-width:1400px)
+{
+    #search_location_search_bar_mega_container
+    {
+        width: 600px;
+        padding:2px
+    }
+    #search_location_search_bar_container
+    {
+        width: 600px;
+        height: 30px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container #search_location_search_bar
+    {
+        margin: auto;
+        width: 500px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container>#div_svg_child
+    {
+        margin: auto;
+       padding: 0px;
+       margin: 0px;
+    }
+    
+}
+@media all and (min-width:800px) and (max-width:1099px)
+{
+    #search_location_search_bar_mega_container
+    {
+        width: 400px;
+        padding:2px
+    }
+    #search_location_search_bar_container
+    {
+        width: 400px;
+        height: 30px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container #search_location_search_bar
+    {
+        margin: auto;
+        width: 300px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container>#div_svg_child
+    {
+        margin: auto;
+       padding: 0px;
+       margin: 0px;
+    }
+    
+}
+@media all and (min-width:500px) and (max-width:799px)
+{
+    #search_location_search_bar_mega_container
+    {
+        
+        width: 300px;
+        padding:2px
+    }
+    #search_location_search_bar_container
+    {
+        width: 300px;
+        height: 30px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container #search_location_search_bar
+    {
+        margin: auto;
+        width: 200px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container>#div_svg_child
+    {
+        margin: auto;
+       padding: 0px;
+       margin: 0px;
+    }
+    
+}
+@media all and (min-width:300px) and (max-width:499px)
+{
+    #search_location_container
+{
+    width:100%;
+}
+    #search_location_search_bar_mega_container
+    {
+        width: 300px;
+        padding:0px
+    }
+    #search_location_search_bar_container
+    {
+        width: 300px;
+        height: 20px;
+        padding: 0px;
+    }
+    #search_location_search_bar_container #search_location_search_bar
+    {
+        width: 260px;
+        padding: 0px;
+        margin: auto;
+    }
+    #search_location_search_bar_container>#div_svg_child
+    {
+        margin: auto;
+       padding: 0px;
+       margin: 0px;
+    }
+    
+}
+#search_location_search_bar_container
+{
+    width: 100%;
+    height: 60px;
+    padding: 4px 12px 0px 0px;
+    border-radius: 40px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    position: relative;
+    background-color: #ffffff;
+}
+#search_location_search_bar
+{
+    font-size: 18px;
+    width: 753px;
+    height: 48px;
+    font-family: inherit;
+    border: none;
+    outline-color: #ffffff;
+}
+#search_location_search_bar_container #div_svg_child
+{
+    width: 3%;
+    margin: auto;
+    margin-left: 1%;
+}
+
+#search_location_search_bar_mega_container_child_one
+{
+    width: 100%;
+    background-color: #ffffff;
+    padding-right: 14px;
+    align-items: center;
+    gap: 2%;
+    position:sticky;
+    display: none;
+}
+#search_location_search_bar_mega_container_child_one_svg
+{
+    width: 4%;
+    margin-left: 1%;
+    border: 1px solid gray;
+    border-radius: 40px;
+}
+#search_location_search_bar_mega_container_child_one_svg svg{
+    width:80%;
+}
+
+#search_location_container_recent
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#search_location_container_recent>div{
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+}

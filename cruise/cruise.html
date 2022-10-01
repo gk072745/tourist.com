@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+   <style>
+
+        *{margin: 0px;
+            font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif ;
+        
+        }
+  #xmlmdua{
+    text-align: center;
+    margin: 20px;
+  }
+        #cruise1{
+            border: 1px solid rgb(214, 214, 214);
+            width: 52%;
+            display: flex;
+            padding: 20px;
+            border-radius: 3px;
+            margin: auto;
+            justify-content: space-between;
+        }
+        #cruise1>*{
+             border: 2px solid rgb(208, 208, 208);
+             padding: 3px 10px; 
+             display: flex;
+             align-items: center;
+             justify-content: space-around;
+             border-radius: 25px;
+             width: 31%;
+
+                   }
+       #cruise1 select, #cruise1 button{
+                    border: none;
+                    background: transparent;
+                    font-weight: bold;
+                    outline: none;
+                   }
+
+        #cruise1_3{
+                    border: none;
+                    width: 20%;
+                   }     
+
+        #cruise1_3 button{
+               background-color: black;
+               color: white;
+               padding: 10px 50px;
+               border-radius: 15px;
+
+        }
+         
+        
+
+
+
+        #cruise2{
+            background-color: rgb(242,242,242); 
+            padding-bottom: 20px;
+        }
+        #cruise2>*{
+          width: 90%;
+          margin: auto;
+        }
+        
+        #cruise2_1>div{
+          margin-bottom: 20px ;
+          margin-top: 20px;
+        }
+
+   #cruise2_1>h2{
+ padding: 20px 0px 10px 0px;
+   }
+
+.swiper-wrapper{
+  width: 90%;
+  margin: auto;
+  
+}
+
+.img_box{
+  width: 100%;
+}
+
+.img_box img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+        #cruise2_2>h2{
+          margin-bottom: 20px;
+        }
+       #cruise2_2_2{
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px 20px ;
+          ;
+        }  
+        #cruise2_2_2>div>p{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            color: #333333db;
+        }
+    
+        #cruise2_2_2>div>:first-child{
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: rgba(23, 8, 8, 0.948);
+
+        }
+        #cruise2_3 h2{
+          color: rgba(0, 0, 0, 0.914);
+          margin: 20px 0px 10px 0px;
+        }
+      #cruise2_3_2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+        
+      }  
+      #cruise2_3_2>div{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 20px;
+      }
+      #cruise2_3_2>div>a{
+        text-decoration: none;
+        color: #333333;
+      } 
+      #cruise2_3_2>div>a:hover{
+   text-decoration: underline;
+   color: #333333c3;
+      }
+
+      #cruise2_3 p{
+font-size: 11px;
+color: #757575;
+margin-top: 5px;
+      }
+    </style>
+
+<style>
+  #footer1{
+background-color:rgb(250,241,237) ;
+}
+
+  #footer1_1{
+  display: grid;
+  width: 87%;
+  margin: auto;
+  margin-bottom: -5%;
+  padding: 50px;
+  font-size: 1.2em;
+  grid-template-columns:20% 20% 25% 35%  ;
+}
+
+#footer1_2{
+  width: 87%;
+  margin: auto;
+  padding: 50px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 65% 35%;
+}
+#footer1_2_1{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+#footer1_2_1>#footer1_2_1_1>img{
+  width: 40px;
+}
+
+#footer1_2_1>#footer1_2_1_1{
+  margin-bottom: 15px;
+  width: 10%;
+}
+
+#footer1_2_1_2_1{
+  color: #262626ab;
+  font-size: 12px;
+  display: flex;
+}
+
+#footer1_2_1_2_2{
+  margin-top:  5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:0px 10px;
+}
+#footer1_2_1_2_2 a{
+  color: rgb(94,92,91);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#footer1_2_2>*{
+  margin: 5px;
+  width: 45%;
+  outline:none;
+  border-radius: 10px;
+  border: 2px solid rgb(197, 197, 197);
+  padding: 7px 10px;
+  color: rgb(36,36,36);
+  font-weight: 800;
+}
+#footer1_2_2>*:hover{
+  background-color: #f4f4f4;
+}
+#footer1_2_2 option{
+  font-weight: bold;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#footer1_2_3{
+  font-size: 12px;
+  margin-top: -10px;
+  color: #262626ab;
+
+}
+#footer1_2_3 a{
+  color: #262626;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#footer1_2_3 a:hover{
+  text-decoration: underline;
+}
+
+#footer1_2_4{
+  margin-left: 50%;
+  width: 45%;
+  margin-top: -10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+#footer1_2_4>*:hover{
+  color: #545454;
+  cursor: pointer;
+}
+
+.swiper-wrapper{
+width: 100%;
+}
+
+ </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.checked {
+  color: orange;
+}
+.img_box{
+  line-height: 20px;
+  background-color: #fff;
+
+}
+
+.img_box h5:hover, .img_box div>:last-child:hover{
+  text-decoration: underline;
+}
+.img_box>div , .img_box>h5{
+  padding-left: 10px;
+}
+
+.img_box>div{
+padding-bottom: 10px;
+}
+ .img_box:hover{
+opacity: 0.85;
+ }
+.img_box img{
+  height: 200px;
+}
+
+
+
+</style>
+</head>
+<body>
+     <h1 id="xmlmdua">Find the best cruise for you</h1>
+      <div id="cruise1">
+  
+          <div id="cruise1_1">
+        <i class="ri-ship-fill"></i>
+         <select name="" id="">
+        <option value="" hidden >Cruise line</option>
+        <option value="">1A Vista Reisen</option>
+        <option value="">A-ROSA Cruises</option>
+        <option value="">AIDA</option>
+        <option value="">APT</option>
+       <option value="">Belmond</option>
+       <option value="">Burma Boating</option>
+       <option value="">Celebrity Cruises</option>
+       <option value="">Century Cruises</option>
+       <option value="">Chimu Cruises</option>
+       <option value="">Dream Cruise Line</option>
+       <option value="">DCS Touristik</option>
+       <option value="">European</option>
+       <option value="">FTI Cruise</option>
+       <option value="">Gate 1 Travel</option>
+       <option value="">Hasna Touristik</option>
+       <option value="">Latin Trails</option>
+       <option value="">MSC Cruise</option>
+       <option value="">Magna Carta</option>
+       <option value="">Oceania Cruise</option>
+       <option value="">Oberoi Group</option>
+       <option value="">Ponant</option>
+       <option value="">Oceania Cruise</option>
+       <option value="">Oceania Cruise</option>
+       <option value="">Saga Cruises</option>
+       <option value="">Riviera Travel</option>
+       <option value="">Oceania Cruise</option>
+       <option value="">Scenic</option>
+       <option value="">Star Clippers</option>
+       <option value="">Tauck River Cruising</option>
+       <option value="">Oceania Cruise</option>
+       <option value="">Variety Cruises</option>
+       <option value="">Victoria Cruises</option>
+       <option value="">Windstar Cruises</option>
+    </select>
+          </div>
+
+          <div id="cruise1_2">
+        <i class="ri-ship-fill"></i>
+        <select name="" id="">
+            <option value="">Aqua</option>
+            <option value="">Bella</option>
+            <option value="">Brava</option>
+            <option value="">Donna</option>
+            <option value="">Flora</option>
+            <option value="">Luna</option>
+            <option value="">Mia</option>
+            <option value="">Riva</option>
+            <option value="">Silva</option>
+            <option value="">Stella</option>
+            <option value="">Viva</option>
+            <option value="">AmaDara(APT</option>
+              
+        </select>
+          </div>
+
+          <div id="cruise1_3">
+              <button>Search</button>
+          </div>
+          
+      </div>
+
+
+        <div id="cruise2">
+                  <div id="cruise2_1">
+                <h2>Popular cruise ships</h3>
+                <div id="cruise2_1_2">
+                     
+                      <div class="swiper mySwiper">
+                          <div class="swiper-wrapper">
+
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/16/44/73/5d/guppies-playroom.jpg" alt="">
+                                      <h5>Norwegian Bliss</h5>
+                                      <div><span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>&nbsp; <span>246</span></div>
+                                </div>
+                               </div>
+                               
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/ea/4c/4b/pool-deck.jpg" alt="">
+                                      <h5>Marella Explorer 2</h5>
+                                      <div><span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>&nbsp; <span>302</span></div>
+                                </div>
+                               </div>
+
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/8e/3b/99/norwegian-epic-ta-listings.jpg" alt="">
+                                    <h5>Norwegian Epic</h5>
+                                    <div><span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>&nbsp; <span>559</span></div>
+                                </div>
+                               </div>
+                             
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/3b/27/83/norwegian-escape-ta-listings.jpg" alt="">
+                                    <h5> Norwegian Escape</h5>
+                                    <div><span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>&nbsp; <span>711</span></div>
+                                </div>
+                               </div>
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/f4/1e/0b/moat-in-san-lorenzo-fort.jpg" alt="">
+                                    <h5>
+                                      Marella Discovery 2</h5>
+                                    <div><span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>&nbsp; <span>930</span></div>
+                                </div>
+                               </div> 
+                               
+                               <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/8e/3d/c9/norwegian-breakaway-ta.jpg" alt="">
+                                    <h5>Norwegian Breakaway</h5>
+                                    <div><span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>&nbsp; <span>1145</span></div>
+                                </div>
+                               </div>  <div class="swiper-slide">
+                                <div class="img_box">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/3b/27/e6/symphony-of-the-seas.jpg" alt="">
+                                    <h5>Royal Caribbean Symphony of the Seas</h5>
+                                    <div><span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star checked"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>
+                                          <span class="fa fa-star"></span>&nbsp; <span>157</span></div>
+                                </div>
+                               </div>
+                               
+                          </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+
+                      </div>
+                 
+
+                </div>
+                   </div>
+                
+
+                  <div id="cruise2_2">
+                    <h2 id="cruise2_2_1">Cruising Guide</h2>
+                    <div id="cruise2_2_2">
+                         <div id="cruise2_2_2_1">
+                            <p>Why take a cruise holiday?</p>
+                            <p>If you have a place on your bucket list, chances are, a cruise will get you there. Cruises cover the world, taking millions of passengers each year to destinations like the Caribbean, the Bahamas, Alaska, Europe, the Mediterranean and even Antarctica. Cruising offers a tremendous value, with trips that include your lodging, meals and entertainment, all rolled into one. Some cruise lines even offer fully inclusive holidays, which cover drinks and tours ashore. Cruising means seeing the world while unpacking only once.</p>
+                            <p>Cruises also provide a wonderful option for families, with many ships offering things like waterslides, mini-golf courses and fun clubs for kids and teens -- all for free. Planning is easy: Pick your destination and the right ship for you. The cruise line makes it simple, offering packages to help you save on extras like alcohol, shore tours or even airfare.</p>
+                            <p>Travellers say they choose to cruise because cruising often costs less per night when compared with staying at a hotel, where they'll have to book -- and pay for -- all their extras.</p>
+                        </div>
+                         <div id="cruise2_2_2_2">
+                            <p>What are Tips to Finding Last-Minute Cruise Deals?</p>
+                            <p>Being flexible will get you the best last-minute cruise deals. If you live near a cruise port and can drive, you're probably going to be able to jump on those deals that might pop up a week or two before the ship is set to sail.</p>
+                            <p>If you don't have flexibility with dates and locations, be willing to bend on destination. This will allow you to find a wider range of last-minute deals travelling to locations in their off-season or shoulder season.</p>
+                            <p>Do plenty of research and know what your ideal cruise costs on average. When you see it drop, pounce! Many cruise lines update pricing several times every day, so be prepared.</p>
+                         </div>
+                         <div id="cruise2_2_2_3">
+                               <p>What are Tips for Finding Cheap Cruises?</p>
+                               <p>If you're a flexible traveller, you'll have a better chance of finding cheap cruises. Take a cruise that doesn't sail over the summer or holidays, when prices are highest. Book an inside cabin, or take your chances with a "guarantee cabin," ideal for passengers who aren't picky about their cabins but really want the lowest price available. Book cabins on lower decks, which often come with lower prices than those rooms on higher floors.</p>
+                               <p>Cruise lines such as MSC Cruises, Carnival Cruise Line, Norwegian Cruise Line and Royal Caribbean International offer rates that might drop as low as $75 per person per night -- and sometimes lower. Here's a tip: Many times, the smaller ships from these lines offer the smallest prices.</p>
+                               <p>If you want a real bargain, consider a transatlantic or repositioning cruise. These cruises are one-way or open-jaw trips, that start in one port and finish at another. You can score a deal sailing from Florida to Europe, for example, or even from New York to Florida. Just be aware, you'll probably have to pay a bit more for airfare to return.</p>
+                         </div>
+                         <div id="cruise2_2_2_4">
+                            <p>Best cruises in 2020</p>
+                            <p>Part of the appeal of cruising is that there's truly something for everyone. Ships come in an array of sizes, some loaded with so many activities, you couldn't get to them all in a week.</p>
+                            <p>Families will find plenty of options and activities onboard big ships, which have transformed cruising, making the vessels as exciting as the destinations to which they sail. The Caribbean is a great option for families, offering lots of sunshine, great beaches and culture. Alaska, famous for its incredible vistas and abundant wildlife, also is a solid family cruise option. Consider cruise lines such as Carnival, Princess, Royal Caribbean, Norwegian, Disney, Celebrity, MSC and Holland America for a family cruise.</p>
+                            <p>River cruising has been heating up over the past few years, with itineraries that send passengers down the Danube or Rhine rivers in Europe or to even more exotic locations, like the Mekong River in Cambodia or Vietnam or the Volga River in Russia. Popular river cruises embark in cities like Amsterdam, Budapest and Lisbon. Popular river cruise lines include Viking, AmaWaterways, Avalon, Scenic, Emerald Waterways, Tauck, Uniworld and Crystal.</p>
+                            <p>If you're a thrill-seeker, consider an expedition cruise. These cruises, often onboard small ships, offer an intimate experience that brings passengers right up next to glaciers, whales, penguins and iguanas. Ships visit tiny spots all over the world, including Antarctica, Alaska, Australia and Greenland. Passengers will spend their time kayaking, hiking, biking and exploring with expert guides and knowledgeable naturalists. Expedition travellers love cruise lines such as Lindblad Expeditions, UnCruise Adventures, Silversea, Hurtigruten, Ponant and Quark Expeditions.</p>
+                            <p>Luxury cruises offer all-inclusive experiences onboard smaller ships with perks like butlers, high-end amenities and personalised, intuitive service. Ships often feature luxury touches like marble and crystal decor, intimate spaces and beautiful spas. Because luxury ships tend to be smaller, they can often reach off-the-beaten-path destinations bigger ships can't -- ports like St. Tropez or Guadeloupe. If you're looking for a luxury cruise, consider Crystal, Seabourn, Regent Seven Seas, Oceania, Azamara, Viking Oceans and Silversea.</p>
+                         </div>
+                    </div>
+                  </div>
+
+                  <div id="cruise2_3">
+                    <h2>Find cruise holiday on popular cruise ships</h2>
+                    <div id="cruise2_3_2">
+                       
+                        <div id="cruise2_3_2_1">
+                          <a href="">Adventure of the Seas</a>
+                          <a href="">Allure of the Seas</a>
+                          <a href="">Anthem of the Seas</a>
+                          <a href="">Enchantment of the Seas</a>
+                          <a href="">Freedom of the Seas</a>
+                          <a href="">Harmony of the Seas</a>
+                          <a href="">Liberty of the Seas</a>
+                          <a href="">Majesty of the Seas</a>
+                          <a href="">Mariner of the Seas</a>
+                          <a href="">Oasis of the Seas</a>
+                          <a href="">Carnival Breeze</a>
+                          <a href="">Carnival Conquest</a>
+                        </div>
+
+                        <div id="cruise2_3_2_2">
+                          <a href="">Carnival Dream</a>
+                          <a href="">Carnival Elation</a>
+                          <a href="">Carnival Glory</a>
+                          <a href="">Carnival Liberty</a>
+                          <a href="">Carnival Magic</a>
+                          <a href="">Carnival Sunshine</a>
+                          <a href="">Carnival Triumph</a>
+                          <a href="">Carnival Valor</a>
+                          <a href="">Carnival Victory</a>
+                          <a href="">Carnival Vista</a>
+                          <a href="">Regal Princess</a>
+                          <a href="">Royal Princess</a>
+                        </div>
+                        
+                        <div id="cruise2_3_2_1">
+                         <a href=""> Ruby Princess</a>
+                         <a href=""> Rotterdam</a>
+                         <a href=""> Oosterdam</a>
+                         <a href=""> Koningsdam</a>
+                         <a href=""> Celebrity Equinox</a>
+                         <a href=""> Disney Dream</a>
+                         <a href=""> MSC Seaside</a>
+                         <a href=""> Norwegian Bliss</a>
+                         <a href=""> Norwegian Breakaway</a>
+                          <a href="">Norwegian Escape</a>
+                         <a href=""> Norwegian Getaway</a>
+                         
+                        </div>
+                    </div>
+                    <p> <i>Tripadvisor provides access to 70,000+ cruise deals by featuring prices for each cabin type offered on the largest selection of cruise sailings.</i></p>
+                  </div>
+            </div>
+
+        </div>
+    
+      <div id="footer1">
+        <div id="footer1_2">
+
+        </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+</body>
+</html>
+
+<script type="module">
+import { footer2 } from "../Components/footerC.js";
+document.getElementById("footer1_2").innerHTML=footer2()
+
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: false,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+<script>
+  let popular=document.getElementsByClassName("img_box")
+for(let i=0;i<popular.length;i++){
+  popular[i].addEventListener("click",()=>{
+    storeData()
+  })
+}
+
+
+let storeData=()=>{
+ 
+  window.location.href="./review.html"
+}
+</script>

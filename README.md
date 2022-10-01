@@ -15,7 +15,6 @@
   <--  JavaScript  -->
   <--  Swiper.JS  --> 
 
-#  --> Team Members:
      ++ Govind Kumawat (Team leader)
      ++ Mridul Jha 
      ++ Pankaj Mehra

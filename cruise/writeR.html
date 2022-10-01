@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+
+    body{
+    background-image: url(https://wallpaperaccess.com/full/842290.jpg);
+    }
+
+    #closeDiv{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        width: 85%;
+        margin:30px auto;
+    }
+    #close:hover{
+        background-color: rgba(0, 0, 0, 0.055);
+        border-radius: 2px;
+        cursor: pointer;
+        color: brown;
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    #form>:first-child{
+        border-radius: 5px;
+        outline: none;
+        padding: 5px 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border: 1px solid grey;
+        background-color: rgba(240, 248, 255, 0.438);
+    }
+    #form>textarea{
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        height: 350px;
+        border-radius: 10px;
+        background-color: rgba(86, 96, 128, 0.238);
+    }
+    #form>textarea:hover{
+        outline: none;
+
+}
+
+#form>:last-child{
+    width: 100px;
+    margin: auto;
+    background-color: rgba(66, 66, 66, 0.829);
+    padding: 3px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: rgb(184, 153, 52);
+    cursor: pointer;
+}
+label{
+    position: relative;
+    top: 45px;
+    left: 30px;
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+  <div id="closeDiv">
+    <i id="close" class="ri-close-fill"></i>
+  </div>
+
+    <div id="form">
+        <input type="text" placeholder="Add a review" id="r1">
+        <label for="">Description</label>
+        <textarea id="r2">  </textarea>
+         <input type="submit" value="Add a Review" id="submit">  
+    </div>
+     
+</body>
+</html>
+<script>
+  document.getElementById("close").addEventListener("click",()=>{
+    closeFunc()
+  })
+  let count;
+  let closeFunc=()=>{
+    window.location.href="./review.html"
+  }
+
+document.getElementById("r2").addEventListener("click",()=>{
+    count=1
+  })
+document.querySelector("body").addEventListener("click",()=>{
+    labelActive()
+})
+ let arrR=JSON.parse(localStorage.getItem("reviews"))||[]
+let labelActive=()=>{
+    if(count==1){
+        document.querySelector("label").innerText=""
+        count=0
+    }else{
+        document.querySelector("label").innerText="Description"
+        count=0
+    }
+
+}
+ document.getElementById("r1").addEventListener("click",()=>{
+    count=1
+ })
+  document.getElementById("submit").addEventListener("click",()=>{
+    submitFunc()
+  })
+
+ let submitFunc=()=>{
+    count=1
+  document.querySelector("label").innerText=""    
+  let title=document.getElementById("r1").value
+  let desc=document.getElementById("r2").value
+  if(!desc||!title){
+    alert("Please Add a Review");
+    return;
+  }
+
+  let name=window.prompt("Full Name")||"Anonymous"
+  let Address=window.prompt("Address")||"Sikar,Rajasthan, 332026"
+  let URl=window.prompt("Profile Picture")||"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/2048px-Circle-icons-profile.svg.png"
+  let obj={title,desc,name,Address,URl}
+  arrR.push(obj)
+  localStorage.setItem("reviews",JSON.stringify(arrR))
+  window.location.href="./review.html"
+  }
+
+  
+</script>
