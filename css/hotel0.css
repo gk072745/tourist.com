@@ -1,0 +1,231 @@
+<style>
+        body{
+            overflow-x:  hidden;
+            font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;;
+        }
+        img{
+            margin-top: 5px;
+            width:80%;
+            height: 150px;
+        }
+
+        #hotel1{
+  
+            padding-left:50px ;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 25% 70%;
+            align-items:flex-start;
+            gap: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        
+        #hotel12>:first-child{     
+            margin: 0px;
+            margin-bottom: 50px;
+        }
+    #hotel122{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+    }
+        #hotel122>*{
+            width: 30%;
+            width: 100%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin: 5px;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 5% 2px 2px 5%;
+          
+        }
+  #hotel122>:first-child{
+      border-left: 10px solid rgb(0,170,108);
+  }
+
+  #hotel122>:nth-child(2){
+      border-left: 10px solid #cc0000
+  }
+
+  #hotel122>:last-child{
+      border-left: 10px solid #757575 
+  }
+
+        #hotel122>*>*{
+            outline: none;
+            border: none;
+            margin:0px 10px;
+        }
+        #hotel122>*>:first-child{
+              color:#757575;
+              margin-bottom: 3px;
+        }
+        
+        #hotel122>*>:last-child{
+          color: #222222;
+          font-size: 14px;
+        }
+
+        #hotel2{
+            width: 85%;
+            margin: auto;
+        }
+        #hotel2 button:hover{
+            background-color: #c9be24;
+            cursor: pointer;
+        }
+
+        #hotel2 h3:first-child:hover{
+    border-bottom: 1px solid;      
+    width: max-content;      
+    cursor: pointer;
+        }
+        .hotel21{
+           display: flex;
+            gap: 10px;
+            margin: 10px 0px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .hotel21>*{
+            width: 32%;
+        }
+        .hotel21 img{
+            width: 100%;
+            height: 96%;
+            padding: 2px 6px;
+          
+        }
+
+      .hotel212{
+        padding: 20px;
+      }
+
+.hotel212 img{
+    width: 70%;
+    
+    
+}
+ 
+.hotel212>:nth-child(2){
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.hotel212>:last-child{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hotel212>div>button{
+    width: 40%;
+    background-color:#f2b203 ;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.hotel213{
+     padding-top: 20px;
+}
+
+.hotel213>*{
+   margin: 30px 0px;
+   line-height: 25px;
+   font-size: 119%;
+}
+
+#star{
+    color: #f2b203;
+}
+#star>span{
+    color: #222222;
+}
+
+#moreData{
+    width: 87%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns:2fr repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+}
+#moreData>:first-child{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ri-lightbulb-flash-fill{
+    font-size: 40px;
+
+}
+#moreData>:first-child>:nth-child(2){
+    font-size: 20px;
+}
+
+#moreData>:first-child>:nth-child(3){
+    color: rgb(55, 66, 97);
+    text-decoration: none;
+}
+
+#moreData>:first-child>:nth-child(3):hover{
+    text-decoration: underline;
+}
+#moreData div div{
+    padding-top:100px;
+    color: white;
+
+}
+#moreData{
+    background-color: rgb(241, 239, 238);
+}
+#moreData p{
+    font-size: 12px;
+    padding: 0px 0px 0px 10px;
+    color: #2c2b2b;
+}
+#moreData>div:first-child{
+    background-color: transparent;
+}
+#moreData>div{
+    background-color: rgb(255, 255, 255);
+}
+#moreData div div h2{
+    padding:10px;
+}
+#moreData>div:nth-child(2)>div:first-child{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)) ,url(https://media-cdn.tripadvisor.com/media/vr-splice-l/06/27/fb/02.jpg);
+}
+#moreData>div:nth-child(3)>div:first-child{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)) , url(https://media-cdn.tripadvisor.com/media/vr-splice-l/05/30/66/f2.jpg);
+}#moreData>div:nth-child(4)>div:first-child{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)) ,url(https://media-cdn.tripadvisor.com/media/vr-splice-l/03/5b/d5/59.jpg);
+}#moreData>div:nth-child(5)>div:first-child{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.327),rgba(0, 0, 0, 0.3)) ,url(https://media-cdn.tripadvisor.com/media/vr-splice-l/0b/8b/3c/f7.jpg);
+}
+#moreData div div h2{
+display: inline;
+margin: 0px;
+}
+
+
+    </style>
