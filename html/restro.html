@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/resto.css">
+    <link rel="stylesheet" href="..//css/footer2.css">
+</head>
+<style>
+    #head{
+          height: 60px;
+          width: 100%;
+          margin: auto;
+          display: flex;
+          border: 1px solid rgb(204, 200, 200);
+      }
+      #B1{
+          height: 45px;
+          width: 180px;
+          margin-top: 5px;
+          margin-left: 100px;
+      }
+      #B1>img{
+          height: 100%;
+          width: 100%;
+      }
+      #head>input{
+          height: 35px;
+          width: 350px;
+          border-radius: 25px;
+          border: 1px solid rgb(204, 200, 200);
+          margin-top: 10px;
+          margin-left: 20px;
+      }
+      #B2{
+          height: 43px;
+          width: 280px;
+          margin-top: 15px;
+          margin-left: 15%;
+          display: flex;
+      }
+      #B2>a{
+          font-size: 21px;
+          font-weight: bold;
+          margin-left: 35px;
+          text-decoration: none;
+          color: #069;
+      }
+      #B2>a:hover{
+          color: rgb(56, 54, 54);
+      }
+      #signup{
+          height: 40px;
+          width: 85px;
+          margin-left: 10px;
+          background-color: black;
+          border-radius: 25px;
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      #signup>a{
+          font-size: 20px;
+          font-weight: bold;
+          text-decoration: none;
+          color: white;
+      }
+      #signup:hover{
+          background-color: rgb(61, 56, 56);
+      }
+      #head2{
+          height: 40px;
+          width: 100%;
+          margin: auto;
+          display: flex;
+          border: 1px solid rgb(204, 200, 200);
+          padding-left: 45px;
+      }
+      #head2>a{
+          text-decoration: none;
+          color: rgb(70, 68, 68);
+          margin-left: 25px;
+          font-size: 18px;
+          margin-top: 8px;
+      }
+      #head2 a:hover{
+          color: rgb(139, 133, 133);
+      }
+  
+</style>
+<body>
+
+    <div id="head">
+        <div id="B1">
+            <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="">
+        </div>
+        <input type="text">
+        <div id="B2">
+            <a href="./reviews.html">Review</a>
+            <a href="./trips.html">Trips</a>
+            <a href="./alert.html">Alerts</a>
+        </div>
+        <div id="signup"><a href="./login.html">Sign in</a></div>
+    </div>
+    <div id="head2">
+        <a href="">India</a>
+        <a href="./hotels0.html">Hotels</a>
+        <a href="">Things to do</a>
+        <a href="">Restaurants</a>
+        <a href="">Flights</a>
+        <a href="">Holiday homes</a>
+        <a href="">Package Holidays</a>
+        <a href="cruise.html">Cruises</a>
+        <a href="">...</a>
+    </div>
+
+    <div id="shop_box">
+        <div id="shop_sidebar">
+            <div id="shop_sidebar1">
+                <h2 id="shop_price">Price</h2>
+                <p id="shop_price_1"><input class="checkbox" type="checkbox">Cheap Eats</p>
+                <p id="shop_price_2"><input class="checkbox" type="checkbox">Mild-range</p>
+                <p id="shop_price_3"><input class="checkbox" type="checkbox">Fine Dining</p>
+                <p id="shop_price_4"><input class="checkbox" type="checkbox">Costly Eats</p>
+            </div>
+            <div id="shop_sidebar2">
+                
+                    <h2 id="shop_brand">Eastablishment Type</h2>
+                   
+                    <input type="text" id="brand_search" placeholder="Search your favourite">
+                    <p id="shop_brand_1"><input class="checkbox" type="checkbox">Restaurents</p>
+                    <p id="shop_brand_2"><input class="checkbox" type="checkbox">Quick Bite</p>
+                    <p id="shop_brand_3"><input class="checkbox" type="checkbox">Coffee and Tea</p>
+                    <p id="shop_brand_4"><input class="checkbox" type="checkbox">Desserts</p>
+            </div>
+            <div id="shop_sidebar3" >
+                <h2 id="shop_category">meals</h2>
+                <p id="shop_category_1"><input class="checkbox" type="checkbox">Uncategorized</p>
+                <!-- <p id="shop_category_2"><input class="checkbox" type="checkbox"></p> -->
+                <p id="shop_category_3"><input class="checkbox" type="checkbox">Breakfast</p>
+                <p id="shop_category_4"><input class="checkbox" type="checkbox">Lunch</p>
+                <p id="shop_category_5"><input class="checkbox" type="checkbox">Brunch</p>
+                <p id="shop_category_6"><input class="checkbox" type="checkbox">Dinner</p>
+              
+
+            </div>
+            <!--sidebar content-->
+        </div>
+        <div id="shop_container">
+            <div id="shop_upbar">
+                <div id="shop_shop">
+                    <h1>Indian Restaurent in New Delhi</h1>
+                    <p id="shop-filtno"></p>
+                </div>
+                <div id="shop_sorting">
+                    <select name="" id="select_short">
+                        <option value="">Sort</option>
+                        <option value="LtoH">Low to high</option>
+                        <option value="HtoL">High to low</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- append items to container-->
+            <div id="shop_items">
+                
+            </div>
+        </div>
+    </div>
+ <div id="footer1">
+    <div id="footer1_2">
+
+    </div>
+ </div>
+</body>
+</html>
+<script type="module">
+     import {footer2} from "../Components/footerC.js"
+     document.getElementById("footer1_2").innerHTML=footer2()
+</script>
+<script src="../scripts/restro.js"></script>
