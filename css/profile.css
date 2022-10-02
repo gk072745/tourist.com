@@ -1,0 +1,22 @@
+
+#signup{
+    display: flex;
+    justify-content: space-around;
+}
+ #dpardr{
+    width: 40px ;
+    height: 40px;
+    border-radius: 100px;
+ }
+ #signup button{
+    height: 40px;
+    width: 85px;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

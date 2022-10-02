@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/profile.css">
+
  <style>
           *{ margin: 0px;
             font-family:"Trip Sans VF", "Trip Sans", Arial, sans-serif;
@@ -392,3 +394,23 @@ background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 1)) ,  url(https:/
 </body>
 </html>
 <script src="../scripts/winner.js" type="module"></script>
+<script>
+  let flag=JSON.parse(localStorage.getItem("flag"))||false
+  if(flag){
+      let x=document.getElementById("signup")
+      x.innerHTML=""
+      x.style.background="transparent"
+      x.style.width="200px";
+      let button=document.createElement("button")
+      button.innerText="Sign out"
+      x.append(button)
+      x.onclick=()=>{
+          localStorage.setItem("flag",false)
+         location.reload()
+      }
+      let dp=document.createElement("img")
+      dp.setAttribute("id","dpardr")
+      dp.src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/512px-Circle-icons-profile.svg.png"
+      x.append(dp)
+  }
+</script>

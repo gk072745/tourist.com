@@ -8,57 +8,62 @@
 <link rel="stylesheet" href="../css/footer2.css">
 
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-
+<link rel="stylesheet" href="../css/profile.css">
     <title>Alert</title>
     <style>
-        #head{
-              height: 80px;
-              width: 80%;
-              margin: auto;
-              display: flex;
-          }
-          #B1{
-              height: 45px;
-              width: 250px;
-              margin-top: 20px;
-    
-          }
-          #B1>img{
-              height: 100%;
-              width: 100%;
-          }
-          #B2{
-              height: 43px;
-              width: 500px;
-              margin-top: 30px;
-              margin-left: 40%;
-              display: flex;
-          }
-          #B2>a{
-              font-size: 21px;
-              font-weight: bold;
-              margin-left: 30px;
-              text-decoration: none;
-              color: black;
-          }
-          #signup{
-              height: 40px;
-              width: 120px;
-              margin-left: 10px;
-              background-color: black;
-              border-radius: 25px;
-              margin-top: 22px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-          }
-          #signup>a{
-              font-size: 20px;
-              font-weight: bold;
-              text-decoration: none;
-              color: white;
-          }
-        
+               #head{
+            height: 80px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+        }
+        #B1{
+            height: 45px;
+            width: 180px;
+            margin-top: 20px;
+        }
+        #B1>img{
+            height: 100%;
+            width: 200%;
+        }
+        #B2{
+            height: 43px;
+            width: 400px;
+            margin-top: 30px;
+            margin-left: 48%;
+            display: flex;
+        }
+        #B2>a{
+            font-size: 21px;
+            font-weight: bold;
+            margin-left: 35px;
+            text-decoration: none;
+            color: black;
+        }
+        #B2>a:hover{
+            color: rgb(56, 54, 54);
+        }
+        #signup{
+            height: 40px;
+            width: 85px;
+            margin-left: 10px;
+            background-color: black;
+            border-radius: 25px;
+            margin-top: 22px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #signup>a{
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+        #signup:hover{
+            background-color: rgb(61, 56, 56);
+        }  
     </style>
 </head>
 <body>
@@ -110,3 +115,23 @@
     import {footer2} from "../Components/footerC.js"
     document.getElementById("footer1_2").innerHTML=footer2()
   </script>
+<script>
+    let flag=JSON.parse(localStorage.getItem("flag"))||false
+    if(flag){
+        let x=document.getElementById("signup")
+        x.innerHTML=""
+        x.style.background="transparent"
+        x.style.width="200px";
+        let button=document.createElement("button")
+        button.innerText="Sign out"
+        x.append(button)
+        x.onclick=()=>{
+            localStorage.setItem("flag",false)
+           location.reload()
+        }
+        let dp=document.createElement("img")
+        dp.setAttribute("id","dpardr")
+        dp.src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/512px-Circle-icons-profile.svg.png"
+        x.append(dp)
+    }
+</script>

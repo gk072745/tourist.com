@@ -12,7 +12,7 @@
   />
 
 <link rel="stylesheet" href="../css/header.css">
-
+<link rel="stylesheet" href="../css/profile.css">
    <style>
 
         *{margin: 0px;
@@ -718,4 +718,24 @@ let storeData=()=>{
  
   window.location.href="./review.html"
 }
+</script>
+<script>
+  let flag=JSON.parse(localStorage.getItem("flag"))||false
+  if(flag){
+      let x=document.getElementById("signup")
+      x.innerHTML=""
+      x.style.background="transparent"
+      x.style.width="200px";
+      let button=document.createElement("button")
+      button.innerText="Sign out"
+      x.append(button)
+      x.onclick=()=>{
+          localStorage.setItem("flag",false)
+         location.reload()
+      }
+      let dp=document.createElement("img")
+      dp.setAttribute("id","dpardr")
+      dp.src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/512px-Circle-icons-profile.svg.png"
+      x.append(dp)
+  }
 </script>

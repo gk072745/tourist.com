@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="../css/profile.css">
+
     <style>
         #head{
             height: 60px;
@@ -999,3 +1001,23 @@
     </div>
 </body>
 </html>
+<script>
+    let flag=JSON.parse(localStorage.getItem("flag"))||false
+    if(flag){
+        let x=document.getElementById("signup")
+        x.innerHTML=""
+        x.style.background="transparent"
+        x.style.width="200px";
+        let button=document.createElement("button")
+        button.innerText="Sign out"
+        x.append(button)
+        x.onclick=()=>{
+            localStorage.setItem("flag",false)
+           location.reload()
+        }
+        let dp=document.createElement("img")
+        dp.setAttribute("id","dpardr")
+        dp.src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/512px-Circle-icons-profile.svg.png"
+        x.append(dp)
+    }
+</script>

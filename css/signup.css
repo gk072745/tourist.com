@@ -58,6 +58,7 @@ form .txt_field{
     pointer-events: none;
 
 }
+
 .txt_field span::before{
     content: '';
     position: absolute;
@@ -68,6 +69,10 @@ form .txt_field{
     background: #2691d9;
     transition: .5s;
 
+}
+#match{
+       font-size: 14px;  
+       color: rgba(255, 0, 0, 0.863);
 }
 .txt_field input:focus ~ label,
 .txt_field input:valid ~ label{
